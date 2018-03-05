@@ -5,16 +5,16 @@ var app = express();
 app.set('view engine', 'ejs');
 
 
-app.get('/cursos', function(req,res){
-	res.render("secao/cursos");
+app.get('/', function(req,res){
+	res.render("home/index");
 });
 
-app.get('/esportes', function(req,res){
-	res.render("secao/esportes");
+app.get('/formulario_inclusao_noticia', function(req,res){
+	res.render("admin/form_add_noticia");
 });
 
-app.get('/pesquisa', function(req,res){
-	res.render("secao/pesquisa");
+app.get('/noticias', function(req,res){
+	res.render("noticias/noticias");
 });
 
 
